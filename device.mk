@@ -18,3 +18,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # call the common setup
 $(call inherit-product, device/shift/mt6797-common/common.mk)
+
+# call the proprietary setup
+$(call inherit-product, vendor/shift/SHIFT5me/SHIFT5me-vendor.mk)
