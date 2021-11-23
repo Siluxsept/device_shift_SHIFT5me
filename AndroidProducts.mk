@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# overlay has priorities. high <-> low.
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# call the common setup
-$(call inherit-product, device/shift/mt6797-common/common.mk)
-
-# call the proprietary setup
-# $(call inherit-product, vendor/shift/SHIFT5me/SHIFT5me-vendor.mk)
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/lineage_SHIFT5me.mk
