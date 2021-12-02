@@ -1,0 +1,6 @@
+soong_namespace {
+    imports: [
+              "device/shift/mt6797-common",
+              "vendor/shift/SHIFT5me",
+             ],
+}

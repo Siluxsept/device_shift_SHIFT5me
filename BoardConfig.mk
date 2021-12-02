@@ -17,6 +17,8 @@ include device/shift/mt6797-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/shift/SHIFT5me
 
+TARGET_BOOTLOADER_BOARD_NAME := SHIFT5me
+
 # Kernel
 TARGET_KERNEL_CONFIG := SHIFT5me_defconfig
 

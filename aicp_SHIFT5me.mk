@@ -16,7 +16,7 @@
 $(call inherit-product, device/shift/SHIFT5me/full_SHIFT5me.mk)
 
 # Override product name for Lineage
-PRODUCT_NAME := lineage_SHIFT5me
+PRODUCT_NAME := aicp_SHIFT5me
 
 # Override Fingerprint
 BUILD_FINGERPRINT := SHIFT/SHIFT6m_EEA/SHIFT6m:8.0.0/O00623/1545320289:user/release-keys
@@ -25,5 +25,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=SHIFT6m_EEA \
     TARGET_DEVICE=SHIFT5me
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+DEVICE_MAINTAINERS="Ron H. (Siluxsept)"
+
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)

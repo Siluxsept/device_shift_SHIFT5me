@@ -15,4 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_SHIFT5me.mk
+    $(LOCAL_DIR)/aicp_SHIFT5me.mk
+
+COMMON_LUNCH_CHOICES := \
+    aicp_SHIFT5me-userdebug
